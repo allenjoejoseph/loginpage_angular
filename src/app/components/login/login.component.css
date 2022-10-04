@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=Poppins:ital,wght@0,600;1,800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+form{
+    background: linear-gradient(to right, #ef233c, #99001afd);
+    height: 380px;
+    width: 220px;
+    color: #edf2f4;
+    box-shadow: 5px 5px 10px #0e0e0e;
+    margin-left: 75%;
+    margin-top: -17%;
+}
+
+.elements{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 45px;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+input{
+    padding: 0 50px 0 0px;
+    margin-left: -5px;
+    border: 2.7px solid #edf2f4;
+    height: 20px;
+    font-size: 9px;
+}
+
+label{
+    float: left;
+    margin-left: 18px;
+}
+
+#btn-1{
+    border: 3px solid #edf2f4;
+    width: 85%;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #edf2f4;
+    font-weight: bold ;
+    background: linear-gradient(to right, #ef233c, #99001afd);
+}
+
+#btn-1:hover{
+    cursor: pointer;
+}
+
+.heading{
+    margin-top: 25%;
+    text-align: center;
+    margin-right: 650px;
+    font-size: 20px;
+    color: #edf2f4;
+    font-style: italic;
+    letter-spacing: 20px;
+}
+
+#l{
+    background: linear-gradient(to right, #ff374f, #99001afd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+a{
+    margin-top: 20px;
+    font-size: 10px;
+    margin-left: 18px;
+    text-decoration: none;
+    color: #9aa4b4;
+}
+
+#click{
+    color: #edf2f4;
+}
+
+#alert{
+    color: #0e0e0e;
+}
+
+#underscore{
+    background: linear-gradient(to right, #ff374f, #99001afd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: blink-animation 0.9s steps(6, start) infinite;
+  }
+  @keyframes blink-animation {
+    to{
+      visibility: hidden;
+    }
+  }
+ 
+
+
+   

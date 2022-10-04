@@ -1,0 +1,24 @@
+<div class="heading"><h2><span id="l">LOGIN</span> HERE<span id="underscore">_</span></h2></div>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="elements">
+        <label for="username">USERNAME</label>
+        <br>
+        <input type="text" formControlName="username" placeholder="Enter your username" required>
+        <br>
+        <div style="font-size:10px; margin-left: 38px;margin-top: 10px; position: fixed;" *ngIf="username && username.invalid && username.touched  && username.errors?.['required']">Alert : <span id="alert">Username is required</span></div>
+        <div style="font-size:10px; margin-left: 17px;margin-top: 10px; position: fixed;" *ngIf="username.errors?.['pattern']">Username requirements not met </div>
+        <br>
+        <br>
+        <label for="password">PASSWORD</label>
+        <br>
+        <input type="password" id="valpass" formControlName="password" placeholder="Enter your password">
+        <div style="font-size:10px; margin-left: 40px; margin-top: 10px; position: fixed;" *ngIf="password && password.invalid && password.touched && password.errors?.['required']">Alert : <span id="alert">Password is required</span></div>
+        <div style="font-size:10px; margin-left: 17px;margin-top: 10px; position: fixed;" *ngIf="password.errors?.['pattern']">Password requirements not met</div>
+        <br>
+        <br>
+    </div>    
+    <br>
+    <button  id="btn-1" type="submit">LOGIN</button>     
+    <a href="">New Here ? <span id="click">Click Now</span></a> 
+</form>           
+
